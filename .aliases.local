@@ -1,0 +1,40 @@
+alias c='clear'
+alias l='ls'
+alias listen='lsof -n -iTCP:3000 | grep --color LISTEN'
+alias ll='ls -al'
+alias ln='ln -v'
+alias mkdir='mkdir -p'
+alias path="echo $PATH | tr -s ':' '\n'"
+alias reload='source ~/.zshrc'
+alias v='$VISUAL'
+
+# Git
+alias fuckit='git add --all && git reset --hard'
+alias g='git'
+alias gan='git add -N .'
+alias gap='git add -p'
+alias gc='git commit'
+alias gpr='git pull --rebase'
+alias gst='git status'
+alias grc='git rebase --continue'
+alias gri='git rebase -i origin/master'
+
+# Postgres
+alias pgrestart='pgstop && pgstart'
+alias pgstart='brew services start postgresql'
+alias pgstop='brew services stop postgresql && rm -f /usr/local/var/postgres/postmaster.pid'
+
+# Rails
+alias ber='bundle exec rspec'
+alias bstatus='bundle exec rake db:migrate:status'
+alias migrate='bundle exec rake db:migrate'
+alias prepare='bundle exec rake db:test:prepare'
+alias remigrate='bundle exec rake db:migrate db:rollback && rake db:migrate db:test:prepare'
+alias rollback='bundle exec rake db:rollback'
+alias s='rspec'
+
+# Ruby
+alias b='bundle'
+alias be='bundle exec'
+alias brake='bundle exec rake'
+alias respring='spring stop && spring start'
