@@ -15,9 +15,11 @@ alias gan='git add -N .'
 alias gap='git add -p'
 alias gc='git commit'
 alias gpr='git pull --rebase'
-alias gst='git status'
 alias grc='git rebase --continue'
 alias gri='git rebase -i origin/master'
+alias gst='git status'
+alias uncommit = reset --soft HEAD^
+alias unstage = reset
 
 # Postgres
 alias pgrestart='pgstop && pgstart'
