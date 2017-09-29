@@ -33,7 +33,7 @@ alias migrate='bundle exec rake db:migrate'
 alias prepare='bundle exec rake db:test:prepare'
 alias remigrate='bundle exec rake db:migrate db:rollback && rake db:migrate db:test:prepare'
 alias rollback='bundle exec rake db:rollback'
-alias s='rspec'
+alias s='bundle exec rails s'
 
 # Ruby
 alias b='bundle'
